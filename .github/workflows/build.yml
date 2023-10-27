@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Install Python2
+        run: apt install python2
       - name: Install Dependencies
         run: npm ci
       - name: Build
